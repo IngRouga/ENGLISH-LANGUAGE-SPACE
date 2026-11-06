@@ -315,3 +315,27 @@ header.nav.scrolled{box-shadow:0 6px 24px -10px rgba(14,42,92,.25)}
   .anim,.reveal{opacity:1!important;transform:none!important}
   .hero h1 .hl{background-size:100% .14em}
 }
+
+/* Language switch */
+.lang{display:flex;border:1.5px solid var(--navy);border-radius:999px;overflow:hidden;margin-left:18px;flex:none}
+.lang button{background:none;border:0;padding:7px 12px;font:600 .8rem var(--sans);color:var(--navy);cursor:pointer;transition:.2s}
+.lang button.on{background:var(--navy);color:var(--gold)}
+@media (max-width:1000px){.nav .container{gap:10px}.lang{margin-left:auto}}
+
+/* Highlights */
+.hl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.hcard{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px 26px 26px 92px;overflow:hidden;transition:.3s}
+.hcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:70px;background:var(--c)}
+.hcard b{position:absolute;left:0;top:50%;width:70px;transform:translateY(-50%);text-align:center;font-family:var(--serif);font-size:2.2rem;color:#fff}
+.hcard h3{font-family:var(--sans);font-weight:700;font-size:1.08rem;color:var(--navy)}
+.hcard p{color:var(--muted);font-size:.93rem;margin-top:4px}
+.hcard:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--c)}
+.hcard:hover::before{width:76px}
+.services{margin-top:56px;background:var(--navy);color:#fff;border-radius:20px;padding:40px;display:grid;grid-template-columns:1fr 1.6fr;gap:36px;align-items:center}
+.services h3{font-family:var(--serif);font-size:2rem;margin:8px 0}
+.services p{color:#c3cde3}
+.srv-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.srv-list li{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:13px 16px;font-size:.93rem;display:flex;gap:10px}
+.srv-list li::before{content:"✓";color:var(--gold);font-weight:700}
+@media (max-width:1000px){.hl-grid{grid-template-columns:1fr 1fr}.services{grid-template-columns:1fr}}
+@media (max-width:640px){.hl-grid,.srv-list{grid-template-columns:1fr}.services{padding:28px 22px}}
