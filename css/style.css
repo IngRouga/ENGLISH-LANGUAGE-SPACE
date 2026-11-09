@@ -339,3 +339,8 @@ header.nav.scrolled{box-shadow:0 6px 24px -10px rgba(14,42,92,.25)}
 .srv-list li::before{content:"✓";color:var(--gold);font-weight:700}
 @media (max-width:1000px){.hl-grid{grid-template-columns:1fr 1fr}.services{grid-template-columns:1fr}}
 @media (max-width:640px){.hl-grid,.srv-list{grid-template-columns:1fr}.services{padding:28px 22px}}
+
+/* Hero slogan: strong upright sans-serif */
+.hero h1.slogan{font-family:"Montserrat",var(--sans);font-weight:800;letter-spacing:-.025em;line-height:1.05}
+.hero h1 em,.hero h1 .hl{font-style:normal}
+.hero-sub{font-family:"Montserrat",var(--sans)!important;font-style:normal!important;font-weight:600}
